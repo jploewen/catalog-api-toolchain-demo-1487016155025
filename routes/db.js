@@ -71,7 +71,8 @@ var populateDB = function() {
         description: '3 different colors to match your personality!',
         usaDollarPrice: 19.99,
         //imgsrc:'http://upload.wikimedia.org/wikipedia/commons/0/07/Multi-use_water_bottle.JPG'
-	imgsrc:'https://en.wikipedia.org/wiki/Main_Page#/media/File:Lufthansa_Airbus_A320-211_D-AIQT_01.jpg'
+	//imgsrc:'https://en.wikipedia.org/wiki/Main_Page#/media/File:Lufthansa_Airbus_A320-211_D-AIQT_01.jpg'
+    	imgsrc:'http://upload.wikimedia.org/wikipedia/commons/2/26/Invalidenpark%2C_Berlin-Mitte%2C_360x180%2C_160326%2C_ako.jpg'
     }];
 
     for (var p in products){
