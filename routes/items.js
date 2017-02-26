@@ -10,8 +10,12 @@ var USE_FASTCACHE = false;
  * 2. uncomment the remaining method body
  */
 exports.loadTest = function(req, res) {
-    res.json({"success": 0, "fail": 0, "time": 0});
-/*
+	
+// No load test catalog	
+    //res.json({"success": 0, "fail": 0, "time": 0});
+	
+// Begin - load test catalog (normally commented out)	
+
     USE_FASTCACHE = true;
     var testCount = req.query.count;
     testCount = testCount ? parseInt(testCount) : 100;
@@ -32,15 +36,21 @@ exports.loadTest = function(req, res) {
         }
     };
 
-    var itemId1 = "1f9e7891bffb03605e3a9b43f996f6ea";
-    var itemId2 = "9dce21273d13dc1dcb1b47370359e753";
+    //var itemId1 = "1f9e7891bffb03605e3a9b43f996f6ea";
+    //var itemId2 = "9dce21273d13dc1dcb1b47370359e753";
+	
+    var itemId1 = "a3a607c9671ab8cd8f7c47c48c6765c2";
+    var itemId2 = "b6c68dab4b8cf4b790a5fd366bd5a87a";
+	
     for (var i = 0; i < testCount; i++) {
         http.get({
             host: req.get('host'),
             path: "/items/" + (i % 2 ? itemId1 : itemId2)
 	}, callback);
     }
-*/
+
+//End - Load test catalog (normally commented out)	
+
 };
 
 
