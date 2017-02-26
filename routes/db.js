@@ -30,7 +30,8 @@ var populateDB = function() {
         quantity: 7,
         description: 'A very sturdy ping pong table. Includes 2 paddles and a regulation sized net.',
         usaDollarPrice: 199.99,
-        imgsrc:'http://upload.wikimedia.org/wikipedia/commons/0/0c/Table_tennis_table_007.JPG'
+        //imgsrc:'http://upload.wikimedia.org/wikipedia/commons/0/0c/Table_tennis_table_007.JPG'
+    	imgsrc:'https://upload.wikimedia.org/wikipedia/commons/b/b6/Mesa_de_ping_pong%2C_Riesstr.%2C_M%C3%BAnich%2C_Alemania_2012-04-28%2C_DD_01.JPG'
     },  
     {
         name: 'IBM Coffee Beans',
