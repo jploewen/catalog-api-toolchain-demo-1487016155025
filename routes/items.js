@@ -9,13 +9,12 @@ var USE_FASTCACHE = false;
  * 1. remove the 'res.json({"success": 0, "fail": 0, "time": 0});' line
  * 2. uncomment the remaining method body
  */
-exports.loadTest = function(req, res) {
-	
+exports.loadTest = function(req, res) {	
 // No load test catalog	
-    //res.json({"success": 0, "fail": 0, "time": 0});
+    res.json({"success": 0, "fail": 0, "time": 0});
 	
 // Begin - load test catalog (normally commented out)	
-
+/*
     USE_FASTCACHE = true;
     var testCount = req.query.count;
     testCount = testCount ? parseInt(testCount) : 100;
@@ -48,7 +47,7 @@ exports.loadTest = function(req, res) {
             path: "/items/" + (i % 2 ? itemId1 : itemId2)
 	}, callback);
     }
-
+*/
 //End - Load test catalog (normally commented out)	
 
 };
