@@ -72,8 +72,34 @@ var populateDB = function() {
         description: '3 different colors to match your personality!',
         usaDollarPrice: 29.99,
         imgsrc:'http://upload.wikimedia.org/wikipedia/commons/0/07/Multi-use_water_bottle.JPG'
-    	//imgsrc:'http://upload.wikimedia.org/wikipedia/commons/2/26/Invalidenpark%2C_Berlin-Mitte%2C_360x180%2C_160326%2C_ako.jpg'
-    }];
+    },
+    // New items to add to catalog
+    {
+        name: 'Outdoor ping pong table',
+        color: 'green',
+        quantity: 7,
+        description: 'A very sturdy ping pong table. Includes 2 paddles and a regulation sized net.',
+        usaDollarPrice: 199.99,
+        imgsrc:'http://upload.wikimedia.org/wikipedia/commons/b/b6/Mesa_de_ping_pong%2C_Riesstr.%2C_M%C3%BAnich%2C_Alemania_2012-04-28%2C_DD_01.JPG'
+    }, 
+    {
+        name: 'Berlin Invalidenpark',
+        color: 'mostly gray',
+        quantity: 1,
+        description: 'large, difficult to move',
+        usaDollarPrice: 2900.97,
+        imgsrc:'http://upload.wikimedia.org/wikipedia/commons/2/26/Invalidenpark%2C_Berlin-Mitte%2C_360x180%2C_160326%2C_ako.jpg'
+    }, 
+    {
+        name: 'Orehek',
+        color: 'mostly gray on beige',
+        quantity: 4,
+        description: 'Picture of Orehek in gray pencil',
+        usaDollarPrice: 67900.97,
+        imgsrc:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/%D0%9E%D0%B3%D0%BE%D0%BD%D0%B5%D0%BA_1917-32.pdf/page1-1285px-%D0%9E%D0%B3%D0%BE%D0%BD%D0%B5%D0%BA_1917-32.pdf.jpg'
+    }
+    // End - New items to add to catalog
+    ];
 
     for (var p in products){
         itemsDb.insert(products[p], function(err/*, body, header*/) {
